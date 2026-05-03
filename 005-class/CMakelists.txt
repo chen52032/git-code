@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_BUILD_TYPE Debug)
+
+project(class)
+
+aux_source_directory(. SRCS)
+
+add_executable(class ${SRCS})
