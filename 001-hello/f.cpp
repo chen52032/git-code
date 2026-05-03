@@ -1,0 +1,5 @@
+#include "head.h"
+double f(double x){
+    if(x==0) return 1;
+    else return x*f(x-1);
+}

@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.10)
+
+file(GLOB lib_srcs "*.cpp")
+
+foreach(libsrcs ${lib_srcs})
+    get_filename_component(libname ${libsrcs} NAME_WE)
+    add_library(${libname} STATIC ${libsrcs})
+endforeach()
+
