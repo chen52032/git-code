@@ -17,7 +17,7 @@ class Mytime{
         t.minute %= 60;
         return t;
     }
-    friend std::ostream & operator<<(std::ostream & out, Mytime & t){
+    friend std::ostream & operator<<(std::ostream & out, const Mytime & t){
         std::string str = std::to_string(t.hour) + " : " + std::to_string(t.minute);
         out << str;
         return out;
@@ -27,6 +27,22 @@ class Mytime{
         t.hour += t.minute/60;
         t.minute %= 60;
         return in;
+    }
+    Mytime & operator++(){
+        Mytime old=*this;
+        this->minute++;
+        this->hour += this->minute/60;
+        this->hour %= 60;
+        // std::cout << "no_int\n";
+        return *this;
+    }
+    Mytime operator++(int){
+        Mytime old=*this;
+        this->minute++;
+        this->hour += this->minute/60;
+        this->hour %= 60;
+        // std::cout << "yes_int";
+        return old;
     }
     void info(){
         std::cout << hour << " : " << minute << "\n";
