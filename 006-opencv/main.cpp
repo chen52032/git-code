@@ -12,4 +12,9 @@ int main(){
     // t1 = t1 + m;
     t1 = m + t1;
     t1.info();
+    cout << "this is overload for os:" << t1 << "\n";
+    cout << "overload for is and Mytime\n";
+    cin >> t1;
+    cout << t1;
+
 }
