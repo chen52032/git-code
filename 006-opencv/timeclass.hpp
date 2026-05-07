@@ -7,6 +7,10 @@ class Mytime{
     int minute;
     public:
     Mytime(int h, int m):hour(h), minute(m){}
+    Mytime(int m):hour(0),minute(m){        //该构造函数只有一个参数,可在初始化时Mytime t = 10 进行传参调用
+        hour += m/60;
+        minute %= 60;
+    }
     friend Mytime operator+(int m, Mytime & t){
         t.minute += m;
         t.hour += t.minute / 60;

@@ -8,6 +8,7 @@ int main(){
     s.operator+=("CPP");
     cout << s << "\n";
     Mytime t1(1, 50);
+    Mytime t2=
     int m=20;
     // t1 = t1 + m;
     t1 = m + t1;
