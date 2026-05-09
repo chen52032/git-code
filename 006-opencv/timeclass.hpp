@@ -37,12 +37,13 @@ class Mytime{
         return *this;
     }
     Mytime operator++(int){
-        Mytime old=*this;
+        int old_hour = this->hour;
+        int old_minute = this->minute;
         this->minute++;
         this->hour += this->minute/60;
         this->hour %= 60;
         // std::cout << "yes_int";
-        return old;
+        return Mytime(old_hour, old_minute);
     }
     void info(){
         std::cout << hour << " : " << minute << "\n";
