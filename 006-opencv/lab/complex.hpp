@@ -24,8 +24,9 @@ class complex{
         bool operator==(const complex & c){
             return this->real == c.real && this->imag == c.imag;
         }
-        friend std::istream & operator>>(std::istream & in, complex & c){
-            in >> c.real >> c.imag;
-            return in;
-        }
-};
+        friend std::istream & operator>>(std::istream & in, complex & c);
+    };
+std::istream & operator>>(std::istream & in, complex & c){
+    in >> c.real >> c.imag;
+    return in;
+}

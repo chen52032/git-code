@@ -22,12 +22,12 @@ class Mytime{
         out << str;
         return out;
     }
-    friend std::istream & operator>>(std::istream & in, Mytime & t){
-        in >> t.hour >> t.minute;
-        t.hour += t.minute/60;
-        t.minute %= 60;
-        return in;
-    }
+    friend std::istream & operator>>(std::istream & in, Mytime & t);
+    //     in >> t.hour >> t.minute;
+    //     t.hour += t.minute/60;
+    //     t.minute %= 60;
+    //     return in;
+    // }
     Mytime & operator++(){
         Mytime old=*this;
         this->minute++;
@@ -49,3 +49,9 @@ class Mytime{
         std::cout << hour << " : " << minute << "\n";
     }
 };
+std::istream & operator>>(std::istream & in, Mytime & t){
+    in >> t.hour >> t.minute;
+    t.hour += t.minute/60;
+    t.minute %= 60;
+    return in;
+}
