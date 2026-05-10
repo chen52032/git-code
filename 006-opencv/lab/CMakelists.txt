@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(e1)
+project(e2)
+project(e3)
+add_executable(e1 e1.cpp rational.hpp)
+add_executable(e2 e2.cpp rational.hpp)
+add_executable(e3 e3.cpp complex.hpp)
