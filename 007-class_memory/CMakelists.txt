@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 4.2.0)
 set(CMAKE_BUILD_TYPE debug)
 project(t1)
+project(t2_smart)
 add_executable(t1 t1.cpp t1.hpp)
+add_executable(t2_smart t2_smart.cpp)
