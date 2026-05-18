@@ -4,13 +4,13 @@
 class B;
 class A{
     public:
-        std::shared_ptr<B> aB;
+        std::weak_ptr<B> aB;
         A(){std::cout << "constructer A" << "\n";}
         ~A(){std::cout << "destructer A" << "\n";}
 };
 class B{
     public:
-        std::shared_ptr<A> bA;
+        std::weak_ptr<A> bA;
         B(){std::cout << "constructer B" << "\n";}
         ~B(){std::cout << "destructer B" << "\n";}
 };
