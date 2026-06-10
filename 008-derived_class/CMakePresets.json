@@ -1,0 +1,14 @@
+{
+    "version": 10,
+    "configurePresets":[
+        {
+            "name": "00",
+            "displayName": "00",
+            "generator": "Ninja Multi-Config",
+            "binaryDir": "${sourceDir}/build/",
+            "cacheVariables": {
+                "TEST_FILES":"ON"
+            }
+        }
+    ]
+}
