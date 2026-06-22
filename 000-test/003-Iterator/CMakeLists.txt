@@ -23,3 +23,4 @@ install(
 
 add_subdirectory(exercise_3.1)
 add_subdirectory(exercise_3.2)
+add_subdirectory(exercise_3.3)
