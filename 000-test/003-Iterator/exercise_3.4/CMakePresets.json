@@ -1,0 +1,11 @@
+{
+    "version": 10,
+    "configurePresets": [
+        {
+            "name": "evenodd",
+            "generator": "Ninja Multi-Config",
+            "binaryDir": "${sourceDir}/build",
+            "installDir": "${sourceDir}/install/"
+        }
+    ]
+}
