@@ -4,3 +4,4 @@ release/
 CPP-main/
 .vscode/
 *.exe
+install/
