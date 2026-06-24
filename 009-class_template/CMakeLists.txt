@@ -7,4 +7,6 @@ target_sources(part
         part.cpp
 )
 
-install(TARGETS part)
+install(TARGETS part
+    DESTINATION 009-class_template
+)
