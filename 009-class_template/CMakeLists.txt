@@ -10,3 +10,5 @@ target_sources(part
 install(TARGETS part
     DESTINATION 009-class_template
 )
+
+add_subdirectory(lab_1)
