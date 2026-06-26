@@ -3,9 +3,10 @@
 #include <string>
 
 template <class T1, class T2> class Pair {
-public:
   T1 key;
   T2 value;
+
+public:
   Pair(T1 k, T2 v) : key(k), value(v) {}
   bool operator<(const Pair<T1, T2> &p) const;
   friend std::ostream &operator<<(std::ostream &os, const Pair<T1, T2> &pair) {
