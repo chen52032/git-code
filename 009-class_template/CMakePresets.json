@@ -1,0 +1,11 @@
+{
+  "version": 10,
+  "configurePresets": [
+    {
+      "name": "part",
+      "binaryDir": "${sourceDir}/build",
+      "installDir": "${sourceDir}/install",
+      "generator": "Ninja Multi-Config"
+    }
+  ]
+}
